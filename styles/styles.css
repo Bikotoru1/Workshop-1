@@ -1,0 +1,47 @@
+*{
+    margin  : 0;
+    padding : 0;
+}
+
+.a-menu{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    font-family: Poppins;
+}
+
+.down-arrow{
+    width   : 10px;
+    height  : 5px;
+    margin-left: 5px;
+}
+
+.small-card-1{
+    font-family : Poppins;
+    font-size   : 12px;
+    color       : #666666;
+}
+
+.poppins-text{
+    font-family : Poppins;
+    color       : #666666;
+}
+
+.orange-button{
+    background-color: #FA7436;
+    color           : white;
+}
+
+.orange-border-button{
+    border-color    : #FA7436;
+    color           : #FA7436;
+}
+
+.orange-borderles-button{
+    color: #FA7436;
+}
+
+.volkhov-h1{
+    font-family: Volkhov;
+    font-weight: 700;
+}

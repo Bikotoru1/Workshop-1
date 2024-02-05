@@ -1,152 +1,337 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    body {
-      padding: 0px;
-      margin: 0px;
-    }
+        <meta
+            name    = "viewport" 
+            content = "width=device-width, initial-scale=1.0"
+        >
 
-    header {
-      background: #000;
-      color: #fff;
-      height: 15vh;
-      width: 100%;
-      margin: 0px;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-    }
+        <link
+            href        = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+            rel         = "stylesheet" 
+            integrity   = "sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+            crossorigin = "anonymous"
+        >
 
-    .my-menu ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      list-style-type: none;
-    }
-
-    .my-menu ul li {
-      margin: 4px;
-      font-size: 14px;
-    }
-
-    .my-menu ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .my-menu ul li a:hover {
-      background: #fff;
-      color: #000;
-    }
-
-    footer {
-      background: white;
-      height: 13vh;
-      color: #050505;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .content-down {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-
-    .message{
-      width: 270px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-    }
-
-    div.section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: 805px;
-      width: 1920px;
-    }
-
-    div.message img {
-      display: flex;
-      justify-content: center;
-
-      width: 78%;
-      height: 200px;
-      align-self: center;
-    }
-    
-    div.message h5 {
-      font-size: 18px;
-      font-family: Poppins;
-      color: #222222;
-      width: 78%;
-      text-align: left;
-      align-self: center;
-      margin: 10px;
-    }
-
-    div.message p {
-      font-size: 12px;
-      color: #999999;
-      width: 50%;
-      text-align: left;
-      align-self: left;
-      margin: 0 0% 0% 11%;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="section">
-    <!-- make the Title half color orange -->
-    <h1 style="margin: 5%; font: Volkhov;">Get update with  <span style="color: #FA7436;">latest blog</span></h1>
-      
-    <section class="content-down" style="height: 42vh; background: white;">
-      <div class="message" style="font-size: 12px;">
-        <img src="src/img/image-1.png" alt="image-1">
-        <h5>The Amazing Difference a Year of Travelling .</h5>
-        <p>July 27, 2021</p>
-      </div>
-      <div class="message" style="font-size: 12px;">
-        <img src="src/img/image-2.png" alt="image-1">
-        <h5>Travel far enough, you meet yourself.</h5>
-        <p>July 27, 2021</p>
-      </div>
-      <div class="message" style="font-size: 12px;">
-        <img src="src/img/image-3.png" alt="image-1">
-        <h5>How to Save Money While Visiting Africa .</h5>
-        <p>July 27, 2021</p>
-      </div>
-      <div class="message" style="font-size: 12px;">
-        <img src="src/img/image-4.png" alt="image-1" >
-        <h5>Reflections on 5 Months of Travel: Time to Hang</h5>
-        <p>July 27, 2021</p>
-      </div>
-    </section>
-  </div>
-  <div class="section">
-    
-  </div>
-  <footer>
-    <div style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%;">
-      <p>Copyright, Trabook 2022. All rights reserved.</p>
-      <p>Terms & Conditions</p>
-    </div>
-  </footer>
-</body>
-
+        <link
+            href    = "./styles/styles.css"
+            rel     = "stylesheet"
+        >
+    </head>
+    <body style="width: 1920; height: 5875; display: flex; flex-direction: column; justify-content: center;">
+        <div class="container-fluid justify-content-between align-items-center mx-auto">
+            <div class="row">
+                <div class="justify-content-left col-3">
+                    <div class="row">
+                        <div class="col d-flex align-items-center">
+                            <h1 
+                                class = "volkhov-h1" 
+                                style = "font-size: 30px;"
+                            >
+                                Trabook
+                            </h1>
+                            <img
+                                src     = "./img/logo.png" 
+                                alt     = "Logo Image"
+                                width   = "19"
+                                height  = "19"
+                                style   = "margin-left: 5px;"
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center mx-auto col-6">
+                    <div class="row d-flex justify-content-between align-items-center mx-auto">
+                        <div class="d-flex justify-content-center col-1 mx-auto">
+                            <a class="a-menu">
+                                Home
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center col-1 mx-auto">
+                            <a class="a-menu">
+                                About
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center col-2 mx-auto">
+                            <a class="a-menu">
+                                Destination
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center col-1 mx-auto">
+                            <a class="a-menu">
+                                Tour
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center col-1 mx-auto">
+                            <a class="a-menu">
+                                Blog
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-right align-items-center col-3">
+                    <div class="row">
+                        <div class="col d-flex">
+                            <button
+                                type    = "button" 
+                                class   = "btn orange-borderles-button"
+                            >
+                                Login
+                            </button>
+                            <button 
+                                type    = "button" 
+                                class   = "btn orange-button"
+                            >
+                                Singn up
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container-fluid justify-content-between align-items-center mx-auto">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div 
+                        class = "card" 
+                        
+                    >
+                        <h1 
+                            class = "volkhov-h1" 
+                            style = "font-size: 64px;"
+                        >
+                            Get started your exciting journey with us.
+                        </h1>
+                        <p>
+                            A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.
+                        </p>
+                        <button 
+                            type    = "button" 
+                            class   = "btn orange-border-button" 
+                            style   = "width: 150px;"
+                        >
+                            Discover Now
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <img 
+                        src     = "./img/Traveler.png"
+                        alt     = "Traveler Igame"
+                        width   = "500"
+                        height  = "530"
+                    >
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container-fluid justify-content-center align-items-center mx-auto">
+            <div class="row justify-content-center align-items-center mx-auto">
+                <div class="col-2">
+                    <div class="card">
+                        <div class="d-flex align-items-center">
+                            <h6>
+                                Location
+                            </h6>
+                            <img 
+                                class   = "down-arrow"
+                                src     = "./img/Down Arrow.png"
+                                alt     = "Down Arrow"
+                            >
+                        </div>
+                        <p
+                            class = "poppins-text"
+                            style = "font-size: 12px;"
+                        >
+                            Where are you going
+                        </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="d-flex align-items-center">
+                            <h6>
+                                Date
+                            </h6>
+                            <img 
+                                class   = "down-arrow"
+                                src     = "./img/Down Arrow.png"
+                                alt     = "Down Arrow"
+                            >
+                        </div>
+                        <p
+                            class = "poppins-text"
+                            style = "font-size: 12px;"
+                        >
+                            When you will go
+                        </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="card">
+                        <div class="d-flex align-items-center">
+                            <h6>
+                                Guest
+                            </h6>
+                            <img 
+                                class   = "down-arrow"
+                                src     = "./img/Down Arrow.png"
+                                alt     = "Down Arrow"
+                            >
+                        </div>
+                        <p
+                            class = "poppins-text"
+                            style = "font-size: 12px;"
+                        >
+                            Number of guest
+                        </p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <button class="btn orange-button">
+                        Explore Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid justify-content-between align-items-center mx-auto">
+            <div class="row justify-content-center">
+                <div class="row justify-content-center">
+                    <div class="col-5">
+                        <h1 
+                            class = "volkhov-h1" 
+                            style = "font-size: 48px;"
+                        >
+                            Things you need to do
+                        </h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-5">
+                        <p 
+                            class = "poppins-text"
+                            style = "font-size: 18px;"
+                        >
+                            We ensure that you’ll embark on a perfectly planned, safe vacation at a price you can afford. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center align-items-center mx-auto">
+                <div class="col-4">
+                    <div class="card">
+                        <img
+                            src     = "./img/Sign Up Card.png"
+                            alt     = "Hand Pointing"
+                            width   = "48"
+                            height  = "48"
+                        >
+                        <h1 
+                            class = "volkhov-h1"
+                            style = "font-size: 24px; margin-top: 15px;"
+                        >
+                            Sing Up
+                        </h1>
+                        <p 
+                            class = "poppins-text"
+                            style = "font-size: 16px; margin-top: 5px;"
+                        >
+                            Completes all the work associated with planning and processing
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img
+                            src     = "./img/Money Card.png"
+                            alt     = "Walet Image"
+                            width   = "46.57"
+                            height  = "48"
+                        >
+                        <h1 
+                            class = "volkhov-h1"
+                            style = "font-size: 24px; margin-top: 15px;"
+                        >
+                            Worth of Money
+                        </h1>
+                        <p 
+                            class = "poppins-text"
+                            style = "font-size: 16px; margin-top: 5px;"
+                        >
+                            After successful access then book from exclusive deals & pricing
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img
+                            src     = "./img/Mountain Image.png"
+                            alt     = "Mountain Image"
+                            width   = "41.11"
+                            height  = "48"
+                        >
+                        <h1 
+                            class = "volkhov-h1"
+                            style = "font-size: 24px; margin-top: 15px;"
+                        >
+                            Exciting Travel
+                        </h1>
+                        <p 
+                            class = "poppins-text"
+                            style = "font-size: 16px; margin-top: 5px;"
+                        >
+                            Start and explore a wide range of exciting travel experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="section">
+          <!-- make the Title half color orange -->
+          <h1 style="margin: 5%; font: Volkhov;">Get update with  <span style="color: #FA7436;">latest blog</span></h1>
+            
+          <section class="content-down" style="height: 42vh; background: white;">
+            <div class="message" style="font-size: 12px;">
+              <img src="src/img/image-1.png" alt="image-1">
+              <h5>The Amazing Difference a Year of Travelling .</h5>
+              <p>July 27, 2021</p>
+            </div>
+            <div class="message" style="font-size: 12px;">
+              <img src="src/img/image-2.png" alt="image-1">
+              <h5>Travel far enough, you meet yourself.</h5>
+              <p>July 27, 2021</p>
+            </div>
+            <div class="message" style="font-size: 12px;">
+              <img src="src/img/image-3.png" alt="image-1">
+              <h5>How to Save Money While Visiting Africa .</h5>
+              <p>July 27, 2021</p>
+            </div>
+            <div class="message" style="font-size: 12px;">
+              <img src="src/img/image-4.png" alt="image-1" >
+              <h5>Reflections on 5 Months of Travel: Time to Hang</h5>
+              <p>July 27, 2021</p>
+            </div>
+          </section>
+        </div>
+        <div class="section">
+          
+        </div>
+        <footer>
+          <div style="display: flex; flex-direction: row; justify-content: space-evenly; width: 100%;">
+            <p>Copyright, Trabook 2022. All rights reserved.</p>
+            <p>Terms & Conditions</p>
+          </div>
+        </footer>
+    </body>
 </html>
