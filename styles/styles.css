@@ -45,3 +45,60 @@
     font-family: Volkhov;
     font-weight: 700;
 }
+
+p{
+    color: #666666;
+}
+
+/* Facebook Icon */
+
+.fb-icon{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Instagram Icon */
+.ig-icon{
+    width: 20px;
+    height: 20px;
+    filter: invert(100%);
+}
+
+/* X Icon */
+
+.x-icon{
+    width: 20px;
+    height: 20px;
+    /* Inverse the color of the icon from white to #444444 */ 
+    filter: invert(100%);
+
+    /* Add a box shadow to the icon */
+    /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
+
+
+    /* Add a background to the icon */
+
+    /* background: white; */
+    
+}
+
+/* Color B-1 */
+
+.color-b-1{
+    background: #444444;
+}
+
+/* Background */
+
+.background{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+}
+
+/* Primary O */
+.primary-o{
+    background: #FA7436;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
