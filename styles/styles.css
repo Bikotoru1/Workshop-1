@@ -50,37 +50,34 @@ p{
     color: #666666;
 }
 
+/* Image */
+.img {
+    border-radius: 8px;
+
+    /* Add a box shadow to the image */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.img:hover{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
 /* Facebook Icon */
 
-.fb-icon{
+.fb-icon, .ig-icon, .x-icon {
     width: 20px;
     height: 20px;
 }
 
 
-/* Instagram Icon */
-.ig-icon{
-    width: 20px;
-    height: 20px;
-    filter: invert(100%);
+/* Instagram & X Icon */
+.ig-icon, .x-icon {
+    filter: invert(80%);
 }
 
-/* X Icon */
-
-.x-icon{
-    width: 20px;
-    height: 20px;
-    /* Inverse the color of the icon from white to #444444 */ 
-    filter: invert(100%);
-
-    /* Add a box shadow to the icon */
-    /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); */
-
-
-    /* Add a background to the icon */
-
-    /* background: white; */
-    
+.icon:hover {
+    filter: invert(50%);
 }
 
 /* Color B-1 */
