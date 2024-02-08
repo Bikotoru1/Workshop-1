@@ -44,4 +44,25 @@
 .volkhov-h1{
     font-family: Volkhov;
     font-weight: 700;
+    font-size: 48px;
+}
+
+.container {
+    background: #FEFCFB;
+    height: 960px;
+    margin: 5%;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-img-top {
+   border-radius: 8px; 
+}
+
+.img-card:hover {
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.40);
 }
