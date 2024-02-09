@@ -49,13 +49,17 @@
 
 .container {
     background: #FEFCFB;
-    height: 960px;
+    height: 750px;
     margin: 5%;
 }
 
 .card {
     border-radius: 8px;
     overflow: hidden;
+}
+
+.card:hover {
+    filter: drop-shadow( 2px 7px 35px #FE935E33);
 }
 
 .card-img-top {
@@ -65,4 +69,23 @@
 .img-card:hover {
     border-radius: 8px;
     background: rgba(0, 0, 0, 0.40);
+}
+
+.card2 {
+    width: 370px;
+    height: 447px;
+    background-color: white;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #66666614;
+}
+
+.card2:hover {
+    filter: drop-shadow( 2px 7px 35px #FE935E33);
+}
+
+.imgCard2 {
+    width: 369px;
+    height: 327px;
 }
