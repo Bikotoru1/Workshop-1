@@ -44,92 +44,48 @@
 .volkhov-h1{
     font-family: Volkhov;
     font-weight: 700;
+    font-size: 48px;
 }
 
-p{
-    color: #666666;
+.container {
+    background: #FEFCFB;
+    height: 750px;
+    margin: 5%;
 }
 
-/* Image */
-.img {
+.card {
     border-radius: 8px;
-
-    /* Add a box shadow to the image */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
-.img:hover{
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+.card:hover {
+    filter: drop-shadow( 2px 7px 35px #FE935E33);
 }
 
-
-/* Facebook Icon */
-
-.fb-icon, .ig-icon, .x-icon {
-    width: 20px;
-    height: 20px;
+.card-img-top {
+   border-radius: 8px; 
 }
 
-
-/* Instagram & X Icon */
-.ig-icon, .x-icon {
-    filter: invert(80%);
+.img-card:hover {
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.40);
 }
 
-.icon:hover {
-    filter: invert(50%);
+.card2 {
+    width: 370px;
+    height: 447px;
+    background-color: white;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #66666614;
 }
 
-/* Color B-1 */
-
-.color-b-1{
-    background: #444444;
+.card2:hover {
+    filter: drop-shadow( 2px 7px 35px #FE935E33);
 }
 
-/* Background */
-
-.background{
-    position: absolute;
-    width: 48px;
-    height: 48px;
+.imgCard2 {
+    width: 369px;
+    height: 327px;
 }
-
-/* Primary O */
-.primary-o{
-    background: #FA7436;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.corner-svg {
-    position: absolute;
-    width: 50px; /* Ajusta el tamaño según sea necesario */
-    height: 50px; /* Ajusta el tamaño según sea necesario */
-  }
-
-  .top-left {
-    top: 0;
-    left: 0;
-  }
-
-  .top-right {
-    top: 0;
-    right: 0;
-  }
-
-.bottom-left {
-    bottom: 0;
-    left: 0;
-}
-
-.bottom-right {
-    bottom: 0;
-    right: 0;
-}
-
-  .position-absolute {
-    position: absolute !important;
-}
-
-  .position-relative {
-    position: relative !important;
-  }
