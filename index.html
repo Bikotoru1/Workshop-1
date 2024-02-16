@@ -20,7 +20,7 @@
             rel     = "stylesheet"
         >
     </head>
-    <body style="width: 1920; height: 5875;">
+    <body style="width: 100%; height: auto;">
         <div class="container justify-content-center align-items-center mx-auto">
             <div class="container-fluid justify-content-between align-items-center mx-auto">
                 <div class="row">
@@ -504,8 +504,13 @@
                 </div>
             </div>
             <br>
-            <div class="container-fluid justify-content-center align-items-center">
+            <div id="about-container" class="container justify-content-center align-items-center"> <!--sección about us -->
                 <div class="row">
+                    <img class="avion-png" src="./img/avion png.png" alt="avion decoración">
+                    <img class="perfilPhoto"
+                    src     ="./img/Man Smiling.png"
+                    alt     ="Man smiling"
+                     >
                     <div class="col-6">
                         <div class="card-body">
                             <h1 
@@ -513,11 +518,11 @@
                             >
                                 What people say <span style="color: #FA7436;">about us.</span>
                             </h1>
-                            <p style="font-family: Roboto; color: #666666; font-size: 16px;">
-                                Our Clients send us bunch of smilies with our services and we love them.
+                            <p class="subTitle" style="font-family: Roboto; color: #666666; font-size: 16px;">
+                                Our Clients send us bunch of smilies with our services <br>and we love them.
                             </p>
                             <img 
-                                class   ="p-0 mb-3 me-4" 
+                                class   ="p-0 mb-3 me-4 mt-3" 
                                 src     ="./Icon/Slider-btn.png" 
                                 style   ="width: 104px; height: 40px;" 
                                 alt     ="Left Right Arrows"
@@ -527,14 +532,8 @@
                     <div class="col-6">
                         <div class="card">
                             <div class="card-img-top">
-                                <img 
-                                    src     ="./img/Man Smiling.png"
-                                    alt     ="Man smiling"
-                                    height  ="68px"
-                                    width   ="68px"
-                                >
-                                <div class="container" style="background-color: white; height: 96px;">
-                                    <p style="font-family: Poppins; font-size: 16px; color: #444444;">
+                                <div class="container pt-5 pb-5" style="background-color: white; height: 245px;">
+                                    <p style="font-family: Poppins; font-size: 24px; color: #444444;">
                                         “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
                                     </p>
                                     <h4 style="font-family: Popoins; font-size: 18px; color: #222222; font-weight: 600;">
@@ -542,6 +541,21 @@
                                     </h4>
                                     <p style="font-family: Poppins; font-size: 14px; color: #666666;">
                                         Lahore, Pakistan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-second">
+                            <div class="card-img-top">
+                                <div class="container pt-5 pb-5" style="background-color: white; height: 245px;">
+                                    <p style="font-family: Poppins; font-size: 24px; color: #444444;">
+                                        “On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”
+                                    </p>
+                                    <h4 style="font-family: Popoins; font-size: 18px; color: #222222; font-weight: 600;">
+                                        Chris Thomas
+                                    </h4>
+                                    <p style="font-family: Poppins; font-size: 14px; color: #666666;">
+                                        CEO of Red Button
                                     </p>
                                 </div>
                             </div>
@@ -794,13 +808,13 @@
                             class   = "icon ig-icon"
                             >
                         </div>
-                        <div class="col">
+                        <!-- <div class="col">
                             <img
                             src     = "src/img/x-icon.svg"
                             alt     = "X"
                             class   = "icon x-icon"
                             >
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 

@@ -1,3 +1,10 @@
+html, body {
+    min-height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 *{
     margin  : 0;
     padding : 0;
@@ -51,12 +58,13 @@
 .container {
     background: #FEFCFB;
     height: 750px;
-    margin: 5%;
+    width: 100%;
 }
 
 .card {
     border-radius: 8px;
     overflow: hidden;
+    z-index: 1;
 }
 
 .card:hover {
@@ -89,4 +97,40 @@
 .imgCard2 {
     width: 369px;
     height: 327px;
+}
+
+#about-container{
+    width: 100%;
+    height: 596px;
+    background-color: #F7F8FC;
+    padding: 10% 0%;
+}
+
+.subTitle{
+    line-height: 32px;
+}
+
+.perfilPhoto{
+    position: absolute;
+    top: 174rem;
+    left: 47rem;
+    z-index: 2;
+    width: 68px;
+    height: 68px;
+    padding: 0;
+}
+
+.card-second{
+    opacity: 50%;
+    border: 1px solid rgba(0,0,0,.125);
+    margin: -10rem 0px 0px 7rem;
+}
+
+.avion-png{
+    position: absolute;
+    top: 168rem;
+    left: 80rem;
+    width: 200px;
+    height: 200px;
+
 }
